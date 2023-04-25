@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.calculator{
+    width: 400px;
+    background-color: #585f6e;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 5px 5px 30px 10px rgb(0 , 0, 0, 0.3);
+
+}
+input{
+    width: 100%;
+    border: none;
+    text-align: right;
+    padding: 10px;
+ 
+}
+#ope-input{
+    background-color: #585f6e;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+
+}
+#res-input{
+    background-color: #585f6e;
+    color: #54b662;
+    font-size: 35px;
+}
+.calc-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+.equal{
+    grid-column: span 2;
+    border-radius: 50px;
+    background-color: #54b662;
+}
+button{
+    padding: 20px;
+    font-size: 24px;
+    border: none;
+    border-radius: 45%;
+    cursor: pointer;
+    
+}
+.Operation{
+    background-color: #54b662;
+}
+.clear{
+    background-color: #54b662;
+}
+.clear-all{
+    background-color: #54b662;
+}
+.modulas{
+    background-color: #54b662;
+}
+button:hover{
+    background-color: #ccddce;
+}
+.Operation:hover{
+    background-color: #7bc286;
+}
+
+.history-page{
+    position: absolute;
+    width: 380px;
+    height: 400px;
+    color: aliceblue;
+    background-color: #54b662;
+    padding: 15px;
+    border-radius: 10px;
+    overflow-y: auto;
+    display: none;
+    
+}
+.history-head{
+    color: white;
+    display: flex;
+    flex: row;
+justify-content: space-between;
+
+}
+i{
+    color: white;
+    font-size: 30px;
+    left: 2%;
+    position: relative;
+    cursor: pointer;
+}
+
+.history-page .active{
+    display: flex;
+    flex-direction: column;
+}
